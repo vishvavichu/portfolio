@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Portfolio Website",
+    "desc": " Personal portfolio website. Don't need much info about it, just scroll down. You're here only!",
+    "image": "nportfolio1",
+    "category": "web",
+    "links": {
+      "view": "https://github.com/vishvavichu",
+      "code": "https://github.com/vishvavichu"
+    }
+  },
+  {
+    "name": "Strategies For Detecting and Fortifying Internet Loan Security",
+    "desc": "The Loan Application Approval Prediction System automates the loan approval process using a machine learning model
+    trained on historical loan application data to predict outcomes based on user data, reducing the need for
+     physical bank visits. Users can conveniently apply for loans and receive instant feedback via an online platform. 
+     The project integrates HTML, CSS, and JavaScript for a user-friendly interface, with Python and SQL for back-end 
+     processing and data management. It ensures data privacy with secure login and registration functionalities and 
+     features a comprehensive loan application form and results page for predictions. Developed with tools like VS 
+     Code and Jupyter Notebook, this system enhances the efficiency and accessibility of the loan application process 
+     for both applicants and financial institutions.",
+    "image": "loanimg",
+    "category": "Web",
+    "links": {
+      "view": "https://github.com/vishvavichu",
+      "code": "https://github.com/vishvavichu"
+    }
+  },
+  {
+    "name": "Food Donation System",
+    "desc": "PThe Food Donation System is a web-based platform designed to connect food donors with recipients, helping
+    the needy and reducing food waste. It offers features like registration, login, dedicated pages for donors 
+    and recipients, and an overview of total collections. Donors can provide details about their donations, while recipients can input their location for delivery. Built with HTML, CSS, and SQL, the system ensures data security and efficient information management. Developed using tools like VS Code, XAMPP, and web browsers, this platform simplifies the donation process, ensuring food reaches those in need and positively impacting communities.",
+    "image": "fds",
+    "category": "Web",
+    "links": {
+      "view": "https://github.com/vishvavichu",
+      "code": "https://github.com/vishvavichu"
+    }
+  },
+  {
+    "name": "A page for Restaurant",
+    "desc": "The Restaurant Website is a visually appealing and user-friendly platform 
+    that provides customers with a comprehensive digital experience. It features a detailed menu with descriptions
+     and pricing, branch locations, social media links, and contact details. The website includes an online
+      ordering system for direct food orders, enhancing convenience. Built with HTML and CSS using tools like
+       VS Code, the site offers a responsive and engaging interface across various devices. This project provided 
+       valuable front-end development experience, combining essential features to enhance the restaurant's 
+       digital presence and improve customer satisfaction.",
+    "image": "restaurant",
+    "category": "Web",
+    "links": {
+      "view": "https://github.com/vishvavichu",
+      "code": "https://github.com/vishvavichu"
+    }
+  },
+  {
+    "name": "Three Dimensional Agumented Reality Portal",
+    "desc": "Our project, the Three-Dimensional Augmented Portal, revolutionizes the way we interact with the virtual 
+    world by seamlessly blending it with reality. Utilizing the advanced capabilities of Meta Spark, this
+     innovative platform enables users to visualize and engage with three-dimensional virtual environments 
+     and objects as if they were physically present. This technology transforms educational experiences, making 
+     complex concepts more accessible and engaging through interactive and immersive visualizations. By allowing 
+     students and learners to interact with 3D models and simulations, it enhances understanding and retention of 
+     information, making learning more effective and enjoyable.",
+    "image": "agumented",
+    "category": "AR",
+    "links": {
+      "view": "https://github.com/vishvavichu",
+      "code": "https://github.com/vishvavichu"
+    }
+  },
+  {
+    "name": "Static portfolio",
+    "desc": "The Personal Portfolio Page is a vibrant showcase of professional achievements and projects,
+    crafted with HTML, CSS, and JavaScript. This visually captivating website provides an engaging 
+    user experience with smooth transitions and a colorful design. It features detailed biographical 
+    information, project descriptions, and contact details, inviting potential collaborators, clients,
+     and employers to connect. The portfolio highlights the creator's skills and dedication to 
+     craftsmanship and innovation in web development.",
+    "image": "portfolio2",
+    "category": "Web",
+    "links": {
+      "view": "https://github.com/vishvavichu",
+      "code":"https://github.com/vishvavichu"
+    }
+  }
+ 
+  
+]
