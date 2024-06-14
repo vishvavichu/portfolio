@@ -725,14 +725,19 @@ header .navbar ul li a:hover {
   color: #fff;
   background: rgb(12, 12, 12);
   margin-right: 2rem;
-  gap: 0.5rem; /* Optional: add spacing between text and logo */
+  gap: 0.5rem; /* Add spacing between text and logo */
 }
 
-/* Optional: Adjust button styles for mobile view */
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .work .desc .btns .btn {
     padding: 1rem 1.5rem; /* Adjust padding for mobile view */
     font-size: 1.2rem; /* Adjust font size for mobile view */
+    line-height: 1.2; /* Adjust line-height for mobile view */
+  }
+
+  .work .desc .btns .btn img {
+    width: 1rem; /* Adjust image size for mobile view */
+    height: auto;
   }
 }
 
