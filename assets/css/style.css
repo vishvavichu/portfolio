@@ -729,7 +729,7 @@ header .navbar ul li a:hover {
 }
 
 /* Optional: Adjust button styles for mobile view */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .work .desc .btns .btn {
     padding: 1rem 1.5rem; /* Adjust padding for mobile view */
     font-size: 1.2rem; /* Adjust font size for mobile view */
