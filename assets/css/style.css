@@ -671,7 +671,7 @@ header .navbar ul li a:hover {
   object-fit: cover;
 }
 .work .box-container .box .content {
-  height: 100%;
+  height: calc(100% - 85px); /* Adjust height as needed */
   width: 100%;
   position: absolute;
   top: 85%;
@@ -679,6 +679,8 @@ header .navbar ul li a:hover {
   background: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
+  overflow-y: auto; /* Enables vertical scrolling */
+  padding: 15px; /* Optional: adds padding inside the content */
 }
 .work .box-container .box .content .tag {
   display: flex;
