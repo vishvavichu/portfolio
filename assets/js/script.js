@@ -37,39 +37,22 @@ $(document).ready(function () {
         }, 500, 'linear')
     });
 
-  <!-- Include the EmailJS SDK in your HTML file -->
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    // <!-- emailjs to mail contact form data -->
+    $("#contact-form").submit(function (event) {
+        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
 
-<script>
-  // Initialize EmailJS with your user ID
-  emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
-
-  // Handle the form submission
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();  // Prevent default form submission
-
-    // Collect form data
-    const formData = {
-      from_name: document.querySelector("input[name='name']").value,
-      from_email: document.querySelector("input[name='email']").value,
-      phone: document.querySelector("input[name='phone']").value,
-      message: document.querySelector("textarea[name='message']").value
-    };
-
-    // Send the form data using EmailJS
-    emailjs.send('contact_service', 'template_contact', formData)
-      .then(function(response) {
-        console.log('SUCCESS!', response.status, response.text);
-        document.getElementById('contact-form').reset();  // Reset the form after submission
-        alert('Form Submitted Successfully');
-      }, function(error) {
-        console.log('FAILED...', error);
-        alert('Form Submission Failed! Try Again');
-      });
-  });
-</script>
-
-
+        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
+            .then(function (response) {
+                console.log('SUCCESS!', response.status, response.text);
+                document.getElementById("contact-form").reset();
+                alert("Form Submitted Successfully");
+            }, function (error) {
+                console.log('FAILED...', error);
+                alert("Form Submission Failed! Try Again");
+            });
+        event.preventDefault();
+    });
+    // <!-- emailjs to mail contact form data -->
 
 });
 
