@@ -37,33 +37,38 @@ $(document).ready(function () {
         }, 500, 'linear')
     });
 
-   // <!-- emailjs to mail contact form data -->
-$("#contact-form").submit(function (event) {
-    event.preventDefault();  // Prevent the default form submission
+  <!-- Include the EmailJS SDK in your HTML file -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
-    emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
+<script>
+  // Initialize EmailJS with your user ID
+  emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
 
-    // Create the parameters object for emailjs
+  // Handle the form submission
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();  // Prevent default form submission
+
+    // Collect form data
     const formData = {
-        from_name: $("input[name='name']").val(),
-        from_email: $("input[name='email']").val(),
-        to_email: 'vishvasit@gmail.com',  // Your email address where you want to receive the form data
-        phone: $("input[name='phone']").val(),
-        message: $("textarea[name='message']").val(),
+      from_name: document.querySelector("input[name='name']").value,
+      from_email: document.querySelector("input[name='email']").value,
+      phone: document.querySelector("input[name='phone']").value,
+      message: document.querySelector("textarea[name='message']").value
     };
 
-    // Use EmailJS to send the form data
+    // Send the form data using EmailJS
     emailjs.send('contact_service', 'template_contact', formData)
-        .then(function (response) {
-            console.log('SUCCESS!', response.status, response.text);
-            document.getElementById("contact-form").reset();  // Reset the form after submission
-            alert("Form Submitted Successfully");
-        }, function (error) {
-            console.log('FAILED...', error);
-            alert("Form Submission Failed! Try Again");
-        });
-});
-// <!-- emailjs to mail contact form data -->
+      .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        document.getElementById('contact-form').reset();  // Reset the form after submission
+        alert('Form Submitted Successfully');
+      }, function(error) {
+        console.log('FAILED...', error);
+        alert('Form Submission Failed! Try Again');
+      });
+  });
+</script>
+
 
 
 });
