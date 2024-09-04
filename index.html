@@ -521,18 +521,16 @@
       <div class="image-box">
         <img draggable="false" src="./assets/images/contact1.png" alt="">
       </div>
-      <form id="contact-form" action="/send-email" method="POST">
-      
+      <form id="contact-form">
         <div class="form-group">
           <div class="field">
             <input type="text" name="name" placeholder="Name" required>
             <i class='fas fa-user'></i>
           </div>
           <div class="field">
-            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="email" name="email" placeholder="Email" required>
             <i class="fas fa-envelope"></i>
           </div>
-
           <div class="field">
             <input type="text" name="phone" placeholder="Phone">
             <i class='fas fa-phone-alt'></i>
@@ -552,6 +550,7 @@
   </div>
 </section>
 <!-- contact section ends -->
+
 
 
 <!-- JavaScript to convert email to lowercase before form submission -->
