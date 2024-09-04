@@ -47,7 +47,7 @@ $("#contact-form").submit(function (event) {
     const formData = {
         from_name: $("input[name='name']").val(),
         from_email: $("input[name='email']").val(),
-        to_email: 'your-email@gmail.com',  // Your email address where you want to receive the form data
+        to_email: 'vishvasit@gmail.com',  // Your email address where you want to receive the form data
         phone: $("input[name='phone']").val(),
         message: $("textarea[name='message']").val(),
     };
