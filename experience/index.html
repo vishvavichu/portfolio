@@ -10,30 +10,16 @@
     <link id='favicon' rel="shortcut icon" href="/assets/images/vichuicon.jpg" type="image/x-png">
 
     <title>Experience & Achievements | Portfolio Vishva S</title>
-    <style>
+     <style>
         .certificate-link {
-            color: black;
-            text-decoration: none;
-            position: relative;
-            display: inline-block;
+            color: navy;
+            text-decoration:none;
+            transition: text-decoration 0.5s, text-shadow 0.5s; /* Slower transition */
         }
 
-        .certificate-link::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -2px; /* Adjust position of underline */
-            width: 100%;
-            height: 2px; /* Adjust thickness of underline */
-            background-color: navy;
-            transform: scaleX(0);
-            transform-origin: bottom right;
-            transition: transform 0.5s ease;
-        }
-
-        .certificate-link:hover::after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
+        .certificate-link:hover {
+            text-decoration: underline;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
