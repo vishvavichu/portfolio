@@ -322,6 +322,20 @@ header .navbar ul li a:hover{
   .experience .container::after {
     font-size: 2.2rem;;
   }
+  .certificate-link {
+    text-decoration: none;  /* Remove default underline */
+    position: relative;
+    display: inline-block;
+    color: navy;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.certificate-link:hover {
+    text-decoration: underline;  /* Underline on hover */
+    transform: scale(1.1);  /* Zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
 }
 /* experience media queries ends */
 /* experience section ends */
