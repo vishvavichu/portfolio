@@ -213,9 +213,9 @@ header .navbar ul li a:hover {
 }
 .home .image img {
   width: 60%;
-  margin-left: 5rem;
-  border-radius: 30%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  margin-left: 7rem;
+  border-radius: 40%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 .home .image img:hover {
