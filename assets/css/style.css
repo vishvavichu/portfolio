@@ -214,10 +214,10 @@ header .navbar ul li a:hover {
 .home .image img {
   width: 60%;
   margin-left: 8rem;
+  margin-top: 1cm;
   border-radius: 25%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
   cursor: pointer;
-  transform: translateY(1cm);
 }
 .home .image img:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
